@@ -27,6 +27,7 @@ body{
     align-items: center;
 }
 .card{
+    display: grid;
     overflow: hidden;
     width: 635px;
     height: 480px;
@@ -67,7 +68,7 @@ body{
 .two-column{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    
    
 }
 .price{
@@ -151,4 +152,18 @@ ul{
     font-size: 0.875rem;
     text-decoration: none;
     list-style: none;
+}
+
+@media (max-width: 780px){
+    .card{
+        width: 400px;
+        height: 735px;
+    }
+    .two-column{
+      
+        grid-template-columns: 1fr;
+    }
+    .top, .price, .info{
+        padding: 1.5rem;
+    }
 }
