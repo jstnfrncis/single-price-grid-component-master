@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: hsl(179, 62%, 43%);
+    --secondary-color: hsl(71, 73%, 54%);
+
+    --LightGray-color: hsl(204, 43%, 93%);
+    --GrayishBlue-color: hsl(218, 22%, 67%);
+}
+body{
+    background-color: var(--LightGray-color);
+    font-family: 'Karla';
+    overflow: hidden;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    overflow: hidden;
+    width: 635px;
+    height: 480px;
+    border-radius: .5rem;
+    box-shadow: 0rem 0.9375rem 1.875rem rgb(0 81 171 / 15%);
+    
+}
+.top{
+    padding: 2.2rem 2.6rem 2.2rem 2.6rem;
+
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+
+}
+.top h1{
+    letter-spacing: 0.014em;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding: 10px 0;
+    font-size: 1.35rem;
+}
+.top span{
+    color: var(--secondary-color);
+    margin-top: 1.375rem;
+    font-weight: 500;
+    font-size: 1.125rem;
+
+}
+
+.top p{
+    margin-top: 0.375rem;
+    color: var(--GrayishBlue-color);
+    padding-right: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.two-column{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+   
+}
+.price{
+    align-items: center;
+    background-color:rgb(43,179,175);
+    padding: 2.5rem;
+
+}
+
+.price h1{
+    color: white;
+    letter-spacing: 0.024em;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.usd{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+}
+.price .flex-group{
+    padding: 15px 0;
+   
+}
+.flex-group{
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product_price{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+.flex-group span{
+    opacity: .5;
+    font-weight: 200;
+    color: white;
+}
+.daily{
+    color: white;
+    padding-bottom: 30px;
+}
+button{
+    font-family: 'Karla';
+    cursor: pointer;
+    color: white;
+    letter-spacing: 0.024em;
+    font-size: .9rem;
+    font-weight: 500;
+    background-color: var(--secondary-color);
+    border: none;
+    width: 100%;
+    border-radius: 0.125rem;
+    padding: 15px 0;
+    box-shadow: 0rem 0.9375rem 1.875rem rgb(0 81 171 / 15%);
+    transition: all .2s ease-in;
+    
+}
+button:hover{
+    background-color: hsl(71, 73%, 45%);
+}
+.info{
+    background-color:rgb(85,192,191);
+    padding: 2.5rem;
+    color: white;
+  
+}
+.why-us{
+    font-size: 1.125rem;
+}
+.bottom-info {
+    margin-top: 1.125rem;
+    line-height: 1.5;
+    text-decoration: none;
+}
+ul{
+    color: hsl(0, 0%, 90%);
+    font-size: 0.875rem;
+    text-decoration: none;
+    list-style: none;
+}
