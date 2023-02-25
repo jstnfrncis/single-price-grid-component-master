@@ -155,7 +155,9 @@ ul{
 }
 
 @media (max-width: 780px){
+ 
     .card{
+        overflow: auto;
         width: 400px;
         height: 735px;
     }
